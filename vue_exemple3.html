@@ -126,7 +126,7 @@
                  Vue.js has a built in currency filter for formatting the price -->
 
             {{service.name}} <span>
-                <input id="nbAchat" type="number" v-model="service.nombre" v-on:click="toggleActive(service)" min=0>
+                <input id="nbAchat" type="number" v-model="service.nombre" min=0>
             {{service.price | currency}}</span>
 
         </li>
@@ -161,22 +161,18 @@ var demo = new Vue({
                 name: 'Web Development',
                 nombre: 0,
                 price: 300,
-                active:false
             },{
                 name: 'Design',
                 nombre: 0,
                 price: 400,
-                active:false
             },{
                 name: 'Integration',
                 nombre: 0,
                 price: 250,
-                active:false
             },{
                 name: 'Training',
                 nombre: 0,
                 price: 220,
-                active:false
             }
         ]
     },
