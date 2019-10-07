@@ -186,7 +186,7 @@ var demo = new Vue({
             var total = 0;
 
             this.services.forEach(function(s){
-                if (s.active){
+                if (s.nombre > 0){
                     total+= s.price * s.nombre;
                 }
             });
